@@ -21,7 +21,7 @@ scenes:
   - id: S02
     act: act1
     title: 出立
-    status: planned
+    status: drafted   # manuscript/S02.md
     pov: ガレット (+ ◇アルダ)
     summary: 裁判のため王都テルハインへ発つ朝。筆頭家令アルダや使用人が見送る。意気揚々のガレットと、無実を晴らそうと先回りで動く周囲。回想(第二幕)への導線を置く。
     purpose: 第一幕を締め、過去編へ橋渡し。アルダ(黒子)とヴァルブレイズ領を提示。
@@ -35,7 +35,7 @@ scenes:
   - id: S03-1
     act: act2
     title: 悪の経営（クロエ・コメディ回）
-    status: planned
+    status: drafted   # manuscript/S03-1.md
     pov: ガレット (+ ◇クロエ / ◇イレーヌor領民)
     summary: ガレットが「限界まで搾取する」つもりで減税・民の抱き込みを実行。結果、領民に感謝される。S01で言及された減税の全貌。
     purpose: 「悪行→善行」の基本パターンを本格提示。
