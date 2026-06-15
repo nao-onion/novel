@@ -1,0 +1,58 @@
+timeline:
+  # 物語上の時系列。「物語内の過去→現在」の順に記載。
+  # 本作は非線形構成（第一幕=現在、第二幕=過去フラッシュバック、第三幕=現在の続き）。
+
+  past_period:
+    label: "過去編（第二幕で描かれる回想）"
+    note: "第一幕より数ヶ月〜1年ほど前の出来事。正確な時間差は本作では明示しない。"
+    events:
+      - id: EVT-P01
+        title: "重税エピソード"
+        summary: "ガレットが「重税で民を搾取する」と決意したが、隣領の増税を受けて自領の税を下げてしまう。領民に感謝される。"
+        related_chars: ["CHAR-001", "CHAR-002"]
+        act_reference: "act2 / scene2_1"
+
+      - id: EVT-P02
+        title: "尾行エピソード"
+        summary: "ヴィオラがガレットを尾行し、素のガレット（善良で慌てた普通の16歳）を目撃してしまう。"
+        related_chars: ["CHAR-001", "CHAR-003"]
+        act_reference: "act2 / scene2_2"
+
+      - id: EVT-P03
+        title: "救出エピソード"
+        summary: "ガレットが（悪の打算のつもりで）命がけでエレオノーラを救出。エレオノーラは気絶していなかったためガレットの本音の独り言を聞いてしまう。"
+        related_chars: ["CHAR-001", "CHAR-004"]
+        act_reference: "act2 / scene2_3"
+
+  present_act1:
+    label: "第一幕（裁判直前）"
+    note: "王国法廷の召喚状が届いた朝から、裁判開廷前日または当日朝まで。"
+    events:
+      - id: EVT-A01
+        title: "召喚状の到着"
+        summary: "王家の紋章が捺された審問召喚状がヴァルブレイズ領主館に届く。ガレット大喜び。クロエが静かに見守る。"
+        related_chars: ["CHAR-001", "CHAR-002"]
+        act_reference: "act1 / scene1_1"
+        manuscript_ref: "manuscript/S01.md"
+
+  present_act3:
+    label: "第三幕（裁判）"
+    note: "王国法廷での審問当日。第一幕から数日〜数週間後（王都への移動期間を含む）。"
+    events:
+      - id: EVT-A31
+        title: "裁判の開廷"
+        summary: "ドルランが審問を開始。ガレット「ついに俺の悪を証明するとき！」と勇んで着席。"
+        related_chars: ["CHAR-001", "CHAR-005"]
+        act_reference: "act3 / scene3_1"
+
+      - id: EVT-A32
+        title: "証言の連鎖"
+        summary: "王国側が悪行として提出した証拠に対し、当事者たちが次々と感謝の証言。ガレットが自爆しようとするがアルダが絶妙にフォローして善行に変換。ドルランが困惑し始める。"
+        related_chars: ["CHAR-001", "CHAR-002", "CHAR-003", "CHAR-004", "CHAR-005", "CHAR-006"]
+        act_reference: "act3 / scene3_2"
+
+      - id: EVT-A33
+        title: "ガレットの気づきと結末"
+        summary: "エレオノーラの切り札証言。ガレット「ずっとバレていた」と悟る。「俺は悪だ！」と叫ぶが誰も信じない。にぎやかに幕。"
+        related_chars: ["CHAR-001", "CHAR-002", "CHAR-003", "CHAR-004", "CHAR-005", "CHAR-006"]
+        act_reference: "act3 / scene3_3"
