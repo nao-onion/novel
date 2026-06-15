@@ -1,0 +1,268 @@
+characters:
+  - id: CHAR-001
+    name: "ガレット"
+    role: "protagonist"
+    age: 16
+    public_profile:
+      summary: "悪に憧れ、悪を演じようとする貴族領主。何をやっても善行になってしまう。"
+      occupation: "貴族領主 / 貴族学院在籍"
+      social_position: "悪名を持つ若き領主"
+    core:
+      desire: "悪役になりたい"
+      fear: ""
+      wound: ""
+      contradiction: "悪を目指すのに、誰よりも人を傷つけられない"
+      false_belief: "自分は悪である"
+      true_need: ""
+    behavior:
+      default_attitude: "悪ぶった態度を作るが、根が善良で滲み出る"
+      stress_reaction: ""
+      avoidance_pattern: ""
+      decision_pattern: "悪い選択をしようとして、結局は善い方を選んでしまう"
+    speech:
+      vocabulary_level: ""
+      sentence_length: ""
+      common_phrases:
+        - "俺は悪だ"
+        - "フハハ"
+      forbidden_phrases: []
+      dialogue_notes: "一人称は「俺」。悪役らしい大仰な言い回しを試みるが空回りする。"
+    relationships:
+      - target: "CHAR-002"
+        visible_relation: "仕えるメイド"
+        hidden_relation: "彼女の崇拝と執着の対象。本人は気づいていない"
+        emotional_state: "信頼している(悪の右腕だと思っている)"
+        conflict: ""
+    secrets: []
+    arc:
+      starting_state: "悪を目指して空回りする"
+      midpoint_state: ""
+      ending_state: "最後まで「俺は悪だ」と言い張るが誰も信じない"
+      key_turning_points:
+        - scene: "S03"
+          change: "自分がずっとバレていたと気づく"
+    constraints:
+      must_not_do:
+        - "実際に人を傷つける"
+        - "善人だと認める"
+      must_eventually_do:
+        - "裁判で「俺は悪だ」と叫ぶ"
+    notes: "詳細は specs/06_characters.md 参照。傷・true_need は今後詰める。"
+
+  - id: CHAR-002
+    name: "クロエ"
+    role: "heroine_maid"
+    age: 15
+    public_profile:
+      summary: "ガレットに仕える毒舌メイド。真顔のツッコミでガレットの悪ぶりを突き放す。"
+      occupation: "侍女(メイド)"
+      social_position: "没落貴族の出。ガレット家に拾われた身"
+    core:
+      desire: "ガレットの傍に居続けること"
+      fear: "ガレットに不要とされること / 彼の傍を誰かに奪われること"
+      wound: "家の没落で全てを失った過去。「拾われた」立場という負い目"
+      contradiction: "毒舌でガレットを突き放すのに、誰よりも彼に執着している"
+      false_belief: "自分の崇拝と執着は完全に隠し通せている"
+      true_need: "恩や立場ではなく「ただ傍に居ていい」と認められること"
+    behavior:
+      default_attitude: "真顔の毒舌ツッコミ。「で、今日は何の善行を?」"
+      stress_reaction: "動揺すると、より冷たく刺々しくなる(毒舌で覆い隠す)"
+      avoidance_pattern: "崇拝や本心を、皮肉や毒舌に変換して口に出す"
+      decision_pattern: "ガレットの利益を最優先に、ただし態度には出さず動く"
+    speech:
+      first_person: "私"
+      address_for_protagonist: "お館様 / あなた"
+      vocabulary_level: "知的で語彙は豊富(没落貴族の教養)"
+      sentence_length: "短く切れ味のある一文"
+      tone: "敬語ベースの毒舌。「〜でございます」を皮肉として使う"
+      common_phrases:
+        - "で、今日は何の善行を?"
+        - "さようでございますか"
+        - "あぁ、失礼。\"悪事\"でございましたね"
+      forbidden_phrases:
+        - "好き(直接的な好意表現)"
+      breakdown_pattern: "重い本音が静かに漏れる。トーンは据え置きのまま中身だけ怖くなる(例:「あなたのいない世界には、価値がないだけで」)"
+      dialogue_notes: "敬語ベースの毒舌。崇拝が滲むときだけ語尾や間が乱れる。崩れても声を荒げず、静けさが逆に重い。"
+    relationships:
+      - target: "CHAR-001"
+        visible_relation: "仕えるメイド・毒舌の従者"
+        hidden_relation: "崇拝の対象。独占欲・執着を伴う重い想いを抱く(ヤンデレ的)"
+        emotional_state: "世界一の信奉者でありながら、それを毒舌で隠している"
+        conflict: "傍に居たいのに、想いを出せば心地よい距離が壊れるという葛藤"
+    secrets:
+      - secret_id: "SECRET-CHAR002-01"
+        truth: "ガレットを心から崇拝し、彼の善性を世界一信じている。その想いは独占欲・執着を伴う重さを持つ。"
+        reason_for_hiding: "「拾われた身の分際で」と思われたくない。崇拝が重すぎて引かれるのが怖い。"
+        risk_if_revealed: "ガレットとの心地よい距離が崩れる"
+        leaks:
+          - scene: "S02-1"
+            behavior: "ガレットを侮辱する者への過剰な敵意としてチラ見えする"
+    reveal:
+      scene: "S03(裁判)"
+      method: "「この方は悪です」と言い張るが、挙げる具体例が全部善行で、結果的に想いを全部ぶちまける"
+    arc:
+      starting_state: "毒舌で距離を取る"
+      midpoint_state: "他者視点で執着・崇拝の重さがチラ見えする"
+      ending_state: "裁判で結果的にガレットへの想いを全部ぶちまける(本人は悪を語っているつもり)"
+      key_turning_points:
+        - scene: "S03"
+          change: "ガレットの制止を聞かず喋り倒し、善行を全部露見させる"
+    constraints:
+      must_not_do:
+        - "崇拝や好意を直接的な言葉で口にする"
+        - "ガレットを本気で見下す"
+      must_eventually_do:
+        - "裁判で(悪の証言のつもりで)善行を語り尽くす"
+    notes: "毒舌の仮面 × 重い崇拝・執着(ヤンデレ的)のギャップが核。裁判での証言は『悪を語っているつもりの愛の告白』。"
+
+  - id: CHAR-003
+    name: "ヴィオラ"
+    role: "heroine_classmate"
+    age: 16
+    public_profile:
+      summary: "貴族学院の同級生。勝気なお嬢様で、ガレットのライバルを自任する。"
+      occupation: "貴族学院の生徒"
+      social_position: "高位貴族の令嬢。常に一番を求められて育った"
+    core:
+      desire: "ガレットに勝ち、彼を独占すること"
+      fear: "ガレットの「一番」が自分でないこと(特にクロエに先んじられること)"
+      wound: "常に一番であることを求められて育ち、「二番」を許されない"
+      contradiction: "勝とうとして近づくほど、惹かれて従属したくなる"
+      false_belief: "自分の独占欲は正当なプライドであって歪んでいない"
+      true_need: "勝ち負けや所有ではなく、対等に隣に立つこと"
+    behavior:
+      default_attitude: "高飛車・煽り口調。「ふん、その程度?」"
+      stress_reaction: "余裕を失うとムキになり、過剰な行動(妨害・宣言)に出る"
+      avoidance_pattern: "惚れた事実を「ライバルの分析」と言い換えて正当化する"
+      decision_pattern: "プライドで動くが、結果的にガレット最優先になる"
+    speech:
+      first_person: "アタシ"
+      address_for_protagonist: "アイツ(三人称) / アンタ(本人へ)"
+      vocabulary_level: "高位令嬢の出だが口は悪い。伝法で荒い"
+      sentence_length: "短く鋭い。苛烈で勢いがある"
+      tone: "苛烈・伝法なお嬢様。気高い身分なのに口調が荒いギャップ"
+      common_phrases:
+        - "はぁ? その程度で悪ぶってんじゃないわよ"
+        - "アタシを舐めてんの?"
+        - "アイツの本性はアタシが一番知ってる"
+      forbidden_phrases:
+        - "好き(素直な好意表現)"
+        - "アンタに負けた(素直な敗北宣言)"
+      breakdown_pattern: "ムキになって自己否定する(例:「って、ち、違う! そういう話じゃ……!」)"
+      dialogue_notes: "一人称「アタシ」。独占宣言型ヤンデレで好意を隠す気はないが「惚れた」とは認めない。本人へは「アンタ」、第三者には「アイツ」。"
+    relationships:
+      - target: "CHAR-001"
+        visible_relation: "学院のライバル"
+        hidden_relation: "尾行で素のガレットに惚れた。独占したいが負けを認めない"
+        emotional_state: "勝ちたいのに惹かれている矛盾"
+        conflict: "ライバルとしての沽券 vs 抑えきれない恋心"
+      - target: "CHAR-002"
+        visible_relation: "ガレットを巡る対抗相手"
+        hidden_relation: "同じ想いを持つ者として最大の警戒対象"
+        emotional_state: "強烈な対抗心"
+        conflict: "ガレットの「一番」の座を争う"
+    secrets:
+      - secret_id: "SECRET-CHAR003-01"
+        truth: "ライバルとして勝つために尾行したのに、素のガレットの善良さを見て恋に落ちている。"
+        reason_for_hiding: "「ライバルが惚れた」という負けを認めたくないプライド。"
+        risk_if_revealed: "勝気な自分の沽券に関わる"
+        leaks:
+          - scene: "S02-2"
+            behavior: "ガレットを貶す者・近づく者(特にクロエ)への過剰な対抗心"
+    reveal:
+      scene: "S03(裁判)"
+      method: "クロエに対抗して「彼を理解しているのは私」と張り合ううち、つい善行をもっと喋ってしまう"
+    arc:
+      starting_state: "ライバルとして敵視・尾行"
+      midpoint_state: "素のガレットに惚れる(が認めない)"
+      ending_state: "裁判でクロエと張り合い、独占欲ごと想いを露呈する"
+      key_turning_points:
+        - scene: "S02-2"
+          change: "尾行で素のガレットを見て惚れる"
+        - scene: "S03"
+          change: "クロエとの対抗心から善行を喋り尽くす"
+    constraints:
+      must_not_do:
+        - "ガレットに惚れたと素直に認める"
+        - "クロエに素直に負けを認める"
+      must_eventually_do:
+        - "裁判で(対抗心から)善行を語り尽くす"
+    notes: "クロエ(隠す崇拝)と対照的な『堂々の独占宣言型ヤンデレ』。法廷でのクロエとのライバル掛け合いが見せ場。"
+
+  - id: CHAR-004
+    name: "エレオノーラ"
+    role: "heroine_princess"
+    age: 16
+    public_profile:
+      summary: "王国の王女。公の場では完璧な正統派王女。裁判では王国側にいながら、裏でガレットの無実(善性)を証明しようとする。"
+      occupation: "王女"
+      social_position: "王家の人間。裁判の関係者"
+    core:
+      desire: "ガレットを我がものとし、彼の善性を世に証明すること"
+      fear: "聞いてしまった「本当のガレット」が、誰にも信じられず悪として裁かれること"
+      wound: "完璧であることを義務づけられ、自分の感情を持つことを許されてこなかった"
+      contradiction: "公正な裁きの担い手でありながら、私情でガレットだけを救おうとする"
+      false_belief: "権力で外堀を埋めれば、彼の心も手に入る"
+      true_need: "王女としてでなく、一人の自分として彼に向き合うこと"
+    behavior:
+      default_attitude: "気品ある完璧な王女。隙がない"
+      stress_reaction: "ガレット絡みだけ我を忘れ、王女の権力で外堀を埋めにかかる(婚約話・勅命など)"
+      avoidance_pattern: "私情を「公正な裁きのため」と公的な大義に言い換える"
+      decision_pattern: "表向きは王女の責務、実際はガレット最優先で動く"
+    speech:
+      first_person: "わたくし"
+      address_for_protagonist: "ガレット / あなた"
+      vocabulary_level: "格調高く洗練された王族の言葉"
+      sentence_length: "落ち着いた中〜長文。崩れるときだけ性急になる"
+      tone: "格調高くおっとり。「〜のよ/〜なさい」。可憐な気品"
+      common_phrases:
+        - "まあ。なんて恐ろしい"
+        - "わたくしが許します"
+        - "これは命令で、お願いなの"
+      forbidden_phrases:
+        - "あの独り言を聞いた(切り札を軽々に明かす発言)"
+      breakdown_pattern: "口調は完璧なまま中身だけ暴走する。王命・婚約話で公的に迫る(例:「わたくしと結婚なさい。これは命令で、お願いなの」)"
+      dialogue_notes: "一人称「わたくし」。普段は完璧だが、ガレット絡みで権力を私的に行使し始める。声を荒げず気品を保ったまま暴走するのが怖さ。"
+    relationships:
+      - target: "CHAR-001"
+        visible_relation: "裁判の関係者(王国側)・救出された相手"
+        hidden_relation: "本音を聞いて初恋に落ちた相手。権力で迫り、無実を証明しようとする"
+        emotional_state: "完璧な仮面の下で制御不能の初恋"
+        conflict: "公正な裁き手の責務 vs ガレットだけを救いたい私情"
+      - target: "CHAR-002"
+        visible_relation: "身分差のある関係者"
+        hidden_relation: "ガレットを巡る競争相手"
+        emotional_state: "警戒"
+        conflict: "ガレットの寵を争う"
+      - target: "CHAR-003"
+        visible_relation: "貴族令嬢として面識"
+        hidden_relation: "ガレットを巡る競争相手"
+        emotional_state: "警戒"
+        conflict: "ガレットの寵を争う"
+    secrets:
+      - secret_id: "SECRET-CHAR004-01"
+        truth: "気絶していたはずの救出の最中、ガレットの本音の独り言(無私の優しさ)を聞いてしまった。それが初恋の発火点。"
+        reason_for_hiding: "裁判の切り札として温存している / 自分だけの宝物にしている。"
+        risk_if_revealed: "ガレットの「悪」が完全に崩壊する(=彼の本懐を奪う)"
+        leaks:
+          - scene: "S02-3"
+            behavior: "ガレットの善性を疑う者への、王女らしからぬ鋭い反応"
+    reveal:
+      scene: "S03(裁判・終盤)"
+      method: "温存していた『本音の独り言』を決定的な証言として投下し、ガレットの悪を完全崩壊させる"
+    arc:
+      starting_state: "完璧な王女として登場、裏の意図は見せない"
+      midpoint_state: "救出時に本音を聞き、初恋に落ちる"
+      ending_state: "切り札証言を放ち、権力で迫る(婚約話など)→ 他二人と修羅場 → にぎやかに幕"
+      key_turning_points:
+        - scene: "S02-3"
+          change: "夢うつつでガレットの本音を聞き、恋に落ちる"
+        - scene: "S03"
+          change: "切り札の証言を投下し、カタルシスを決定づける"
+    constraints:
+      must_not_do:
+        - "完璧な王女の仮面を公の場で(ガレット以外に)崩す"
+        - "切り札を終盤より前に明かす"
+      must_eventually_do:
+        - "終盤で『本音の独り言』を決定的な証言として出す"
+    notes: "クロエ(隠す)・ヴィオラ(宣言)に対し『権力で迫る』第三の出方。彼女の切り札証言がラスト『誰も悪を信じない』を決定づける核。"

@@ -1,0 +1,22 @@
+title: Novel Workspace
+description: 小説本文と企画資料を公開するためのJekyllサイト
+lang: ja
+timezone: Asia/Tokyo
+
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - .agents/
+  - .claude/
+  - .git/
+  - .github/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
