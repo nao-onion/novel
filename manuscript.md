@@ -12,6 +12,7 @@ permalink: /manuscript/
   <li><a href="#s03-2">S03-2　拾われた日</a></li>
   <li><a href="#s04-1">S04-1　学園</a></li>
   <li><a href="#s04-2">S04-2　尾行</a></li>
+  <li><a href="#s05-1">S05-1　救出</a></li>
 </ul>
 
 <article class="manuscript-body" id="s01">
@@ -42,4 +43,9 @@ permalink: /manuscript/
 <article class="manuscript-body" id="s04-2">
   {% capture s04_2 %}{% include_relative manuscript/S04-2.md %}{% endcapture %}
   {{ s04_2 | markdownify }}
+</article>
+
+<article class="manuscript-body" id="s05-1">
+  {% capture s05_1 %}{% include_relative manuscript/S05-1.md %}{% endcapture %}
+  {{ s05_1 | markdownify }}
 </article>
