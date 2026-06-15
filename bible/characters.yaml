@@ -9,11 +9,12 @@ characters:
       social_position: "悪名を持つ若き領主"
     core:
       desire: "悪役になりたい"
-      fear: ""
-      wound: ""
+      desire_origin: "幼少期に城の書庫で読んだ大魔王の物語。誰にも媚びず、世界を敵に回して膝を折らない魔王の『自由さ・強さ』に憧れた(manuscript/S01.md)。悲しい過去ではなく純粋な憧れ(DECISION-002/World Spec禁止事項と整合)。"
+      fear: "誰の顔色も窺わず一人で立てる『強い悪』になれず、凡庸なままで終わること"
+      wound: "深刻な傷はない(物語の禁止事項)。強いて言えば『理想の悪に一向に近づけない』という自覚なき空回りの蓄積"
       contradiction: "悪を目指すのに、誰よりも人を傷つけられない"
-      false_belief: "自分は悪である"
-      true_need: ""
+      false_belief: "自分は悪である / 悪になれば誰にも媚びず傷つかず自由でいられる"
+      true_need: "悪名や恐怖ではなく、ありのままの自分がすでに慕われ受け入れられていると気づくこと"
     behavior:
       default_attitude: "悪ぶった態度を作るが、根が善良で滲み出る"
       stress_reaction: ""
@@ -53,7 +54,7 @@ characters:
         - "善人だと認める"
       must_eventually_do:
         - "裁判で「俺は悪だ」と叫ぶ"
-    notes: "詳細は specs/06_characters.md 参照。傷・true_need は今後詰める。"
+    notes: "詳細は specs/06_characters.md 参照。動機=純粋な悪への憧れ(本に由来)。内面描写はS01で確立。終盤まで『なぜ悪が失敗するのか』に本人が気づかない設計を維持。"
 
   - id: CHAR-002
     name: "クロエ"
