@@ -141,6 +141,24 @@ a {
   line-height: 1.25;
 }
 
+.manuscript-body {
+  max-width: 760px;
+  margin-top: 36px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  font-size: 1.08rem;
+  line-height: 2.05;
+}
+
+.manuscript-body h1,
+.manuscript-body h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.35;
+}
+
+.manuscript-body p {
+  margin: 1.15em 0;
+}
+
 .doc-source {
   margin: -8px 0 20px;
   color: var(--muted);

@@ -10,5 +10,6 @@ title: Home
 ## Contents
 
 <ul class="link-list">
+  <li><a href="{{ '/manuscript/' | relative_url }}">本文を読む</a></li>
   <li><a href="{{ '/documents/' | relative_url }}">企画資料・プロット・キャラクター設定を見る</a></li>
 </ul>
