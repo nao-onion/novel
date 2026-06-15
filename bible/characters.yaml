@@ -17,9 +17,10 @@ characters:
       true_need: "悪名や恐怖ではなく、ありのままの自分がすでに慕われ受け入れられていると気づくこと"
     behavior:
       default_attitude: "悪ぶった態度を作るが、根が善良で滲み出る"
-      stress_reaction: ""
-      avoidance_pattern: ""
+      stress_reaction: "焦ると素の優しさが出てしまい、直後に咳払いで取り繕う"
+      avoidance_pattern: "善行化した事実を直視しない。悪に都合よく歪曲して解釈する"
       decision_pattern: "悪い選択をしようとして、結局は善い方を選んでしまう"
+      self_deception: "重要: 悪行が善行に終わっても本人は『失敗した』と気づかない。感謝や好意は『油断させる甘言/罠』『民を依存させる飼い殺し計画の成功』等、つねに悪の論理で歪めて解釈する。『うまくいかない』『おかしい』と失敗を自覚させてはならない(終盤S07-S08の気づきまで一貫)。"
     speech:
       first_person: "俺"
       vocabulary_level: "悪の論理を気取った大仰めの語彙。焦ると素朴な16歳に戻る"
