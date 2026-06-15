@@ -20,13 +20,19 @@ characters:
       avoidance_pattern: ""
       decision_pattern: "悪い選択をしようとして、結局は善い方を選んでしまう"
     speech:
-      vocabulary_level: ""
-      sentence_length: ""
+      first_person: "俺"
+      vocabulary_level: "悪の論理を気取った大仰めの語彙。焦ると素朴な16歳に戻る"
+      sentence_length: "余裕時は低く落ち着いた中文。焦ると短く性急"
+      tone: "声を低く落とし不敵に気取る。ニヤリと含み笑い。クールを装う"
+      villain_syntax: "善行を『支配・借り・手駒・効率』など悪の論理で言い換える"
       common_phrases:
-        - "俺は悪だ"
-        - "フハハ"
-      forbidden_phrases: []
-      dialogue_notes: "一人称は「俺」。悪役らしい大仰な言い回しを試みるが空回りする。"
+        - "これが、悪というものだ"
+        - "これこそが、悪だ"
+        - "……ゴホン。フン、〜(取り繕い)"
+      forbidden_phrases:
+        - "素直に善意を認める言葉(『助けたい』等を地で言う)"
+      breakdown_pattern: "焦ると口調が崩れてタメ口・素の早口になり、本音(心配・優しさ)が漏れる。直後に咳払いで取り繕う"
+      dialogue_notes: "一人称「俺」。悪役を不敵に演じるが、善行を悪の理屈で正当化するほど善行が際立つ。焦り→素の露出→取り繕いの3段で笑いを作る。ラストの「俺は悪だ!」への布石として悪の自称を多用。"
     relationships:
       - target: "CHAR-002"
         visible_relation: "仕えるメイド"
