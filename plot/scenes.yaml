@@ -238,7 +238,7 @@ scenes:
   - id: S08
     act: act3
     title: 切り札と結末
-    status: planned
+    status: drafted   # manuscript/S08.md
     pov: ガレット
     summary: エレオノーラが温存していた「本音の独り言」を決定的証言として投下。ガレットの悪が完全崩壊し、ついに「ずっとバレていた」と気づく。「俺は悪だ!」と叫ぶが誰も信じない。三人のヒロインが彼を巡り修羅場、にぎやかに幕。
     purpose: カタルシス。気づきの山。Ending Spec の回収。
