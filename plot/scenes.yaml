@@ -218,7 +218,7 @@ scenes:
   - id: S06
     act: act3
     title: 開廷
-    status: planned
+    status: drafted   # manuscript/S06.md
     pov: ガレット
     summary: 王国法廷で審問が始まる。主任審問官ドルランが断罪する気満々で「悪行」を列挙し始める。ガレットは「ついに悪が証明される」と意気揚々。
     purpose: 裁判の場とルール、相手役ドルランを提示。コメディの舞台装置を起動。現在時制に復帰。

@@ -16,6 +16,7 @@ permalink: /manuscript/
   <li><a href="#s05-2">S05-2　切り札</a></li>
   <li><a href="#san-1">SAN-1　王都の集結</a></li>
   <li><a href="#san-2">SAN-2　裁判前夜</a></li>
+  <li><a href="#s06">S06　開廷</a></li>
 </ul>
 
 <article class="manuscript-body" id="s01">
@@ -66,4 +67,9 @@ permalink: /manuscript/
 <article class="manuscript-body" id="san-2">
   {% capture san_2 %}{% include_relative manuscript/SAN-2.md %}{% endcapture %}
   {{ san_2 | markdownify }}
+</article>
+
+<article class="manuscript-body" id="s06">
+  {% capture s06 %}{% include_relative manuscript/S06.md %}{% endcapture %}
+  {{ s06 | markdownify }}
 </article>
