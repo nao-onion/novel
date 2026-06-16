@@ -158,7 +158,7 @@ scenes:
   - id: SAN-2
     act: act3
     title: 裁判前夜（三つ巴）
-    status: designed
+    status: drafted   # manuscript/SAN-2.md
     target_length: "約5,000〜6,000字"
     pov: ガレット (+ ◇三者決意)
     summary: |
